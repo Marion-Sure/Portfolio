@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marion Sure | Data Engineer</title>
+<meta name="description" content="Marion Racheal Nyaboe Sure - Data Engineer portfolio showcasing data projects, dashboards, ETL pipelines, and analytics experience.">
 
 <style>
 :root {
@@ -69,7 +70,6 @@ nav a:hover {
 
 header {
     padding: 100px 10% 60px 10%;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,18 +82,18 @@ header .header-content{
     text-align: center;
 }
 
-heade img.profile-pic{
-    width: 140px;
-    height: 140px;
+header img.profile-pic{
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 3px solid var(--accent);
+    border: 4px solid var(--accent);
     object-fit: cover;
 }
 
 header h1 {
     font-size: 42px;
-    margin-bottom: 10px 0 5px 0;
+    margin: 10px 0 5px 0;
 }
 
 header p {
@@ -102,20 +102,22 @@ header p {
     margin: 5px 0;
 }
 
-.cv-btn {
+.cv-btn, .cta-btn {
     margin-top: 20px;
     background: var(--accent);
     color: white;
     border: none;
-    padding: 12px 26px;
+    padding: 12px 28px;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.cv-btn:hover {
+.cv-btn:hover, .cta-btn:hover {
     transform: translateY(-2px);
     opacity: 0.9;
 }
@@ -166,6 +168,7 @@ h2 {
     cursor: pointer;
     font-weight: 600;
     transition: 0.3s ease;
+    text-decoration: none;
 }
 
 .project-btn:hover {
@@ -193,6 +196,7 @@ footer {
     font-size: 14px;
     color: var(--muted);
 }
+
 @media(min-width: 768px){
     header .header-content {
         flex-direction: row;
@@ -222,32 +226,30 @@ footer {
 
 <header>
     <div class="header-content">
-    <img src="profile.jpg" alt="Marion Sure Photo" class="profile-pic">
-    <div>
-        <h1>Marion Racheal Nyaboe Sure</h1>
-        <p>Data Engineer | SQL | Python | ETL | Data Validation | BI Reporting</p>
-        <p>Nairobi, Kenya</p>
-
-        <a href="Marion_Sure_CV.pdf" target="_blank" download>
-            <button class="cv-btn">Download CV</button>
-        </a>
+        <img src="profile.jpg" alt="Marion Sure Professional Photo" class="profile-pic">
+        <div>
+            <h1>Marion Racheal Nyaboe Sure</h1>
+            <p>Data Engineer | SQL | Python | ETL | Data Validation | BI Reporting</p>
+            <p>Nairobi, Kenya</p>
+            <a href="Marion_Sure_CV.pdf" target="_blank" download>
+                <button class="cv-btn">Download CV</button>
+            </a>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
     </div>
- </div>
 </header>
 
 <section id="about">
     <h2>Professional Summary</h2>
     <div class="card">
         <p>
-            Data Engineer with a background in software development and analytics.
-            Experienced in designing automated reporting pipelines, performing
-            structured data validation, and building dashboards that support
-            operational and executive-level decision-making.
+            I am a Data Engineer with a strong background in software development and analytics. 
+            I design automated reporting pipelines, perform structured data validation, 
+            and build dashboards that support operational and executive-level decision-making.
         </p>
         <p>
-            Skilled in SQL, Python, relational databases, ETL workflows,
-            and cloud fundamentals (AWS S3). Focused on building reliable,
-            scalable, and well-documented data systems.
+            Skilled in SQL, Python, relational databases, ETL workflows, and cloud fundamentals (AWS S3). 
+            I focus on building reliable, scalable, and well-documented data systems.
         </p>
     </div>
 </section>
@@ -263,20 +265,20 @@ footer {
 
         <div class="card">
             <h3>Skills</h3>
-            <p><strong>Languages & Tools:</strong>SQL, Python (Pandas, Matplotlib), Excel, Power BI, Tableau, Looker Studio,</p>
-            <p><strong>Data Analytics:</strong>Exploratory Data analysis, Data Cleaning, Data Validation, Dashboard reporting</p>
-            <p><strong>Databases:</strong>MySQL, PostgreSQL</p>
-            <p><strong>Data Engineering:</strong>ETL Workflows,Airflow, Apache Spark</p>
-            <p><strong>Cloud:</strong>AWS(S3) </p>
+            <p><strong>Languages & Tools:</strong> SQL, Python (Pandas, Matplotlib), Excel, Power BI, Tableau, Looker Studio</p>
+            <p><strong>Data Analytics:</strong> Exploratory Analysis, Data Cleaning, Data Validation, Dashboard Reporting</p>
+            <p><strong>Databases:</strong> MySQL, PostgreSQL</p>
+            <p><strong>Data Engineering:</strong> ETL Workflows, Airflow, Apache Spark</p>
+            <p><strong>Cloud:</strong> AWS (S3)</p>
         </div>
 
         <div class="card">
             <h3>Experience Highlights</h3>
             <ul>
-                <li>Automated reporting pipeline across 17 sub-counties</li>
-                <li>Validated 20,000+ structured records</li>
-                <li>Designed performance dashboards for leadership</li>
-                <li>Built telecom analytics reporting systems</li>
+                <li>Automated reporting pipeline across 17 sub-counties, reducing manual reporting time</li>
+                <li>Validated 20,000+ structured records to ensure data accuracy</li>
+                <li>Designed performance dashboards for leadership to track KPIs</li>
+                <li>Built telecom analytics reporting systems to support decision-making</li>
             </ul>
         </div>
     </div>
@@ -285,65 +287,52 @@ footer {
 <section id="projects">
     <h2>Data Projects</h2>
     <div class="grid">
-
         <div class="card">
             <h3>Green & Clean Automation Pipeline</h3>
-            <p>Designed structured reporting workflow replacing manual WhatsApp reporting with automated dashboards.</p>
+            <p>Developed automated reporting dashboards to replace manual WhatsApp reporting. Increased reporting efficiency and accuracy.</p>
             <p><strong>Stack:</strong> Google Forms, Sheets, Looker Studio</p>
-            <a href="https://lookerstudio.google.com/u/0/reporting/cb267c70-2fc9-4399-b5b2-d93bb35a4b59/page/p_d6aovzzltd" target="_blank">
-                <button class="project-btn">View Full Project</button>
-            </a>
+            <a href="https://lookerstudio.google.com/u/0/reporting/cb267c70-2fc9-4399-b5b2-d93bb35a4b59/page/p_d6aovzzltd" target="_blank" class="project-btn">View Full Project</a>
         </div>
 
         <div class="card">
             <h3>Bursaries Allocation Dashboard</h3>
-            <p>Built interactive analytics dashboard tracking funding trends and allocation distribution.</p>
+            <p>Built interactive dashboard tracking funding trends and allocation distribution to improve transparency and decision-making.</p>
             <p><strong>Stack:</strong> Excel, Looker Studio</p>
-            <a href="https://lookerstudio.google.com/reporting/4d1c130e-f976-49ca-a408-adcaba4f402d" target="_blank">
-                <button class="project-btn">View Full Project</button>
-            </a>
+            <a href="https://lookerstudio.google.com/reporting/4d1c130e-f976-49ca-a408-adcaba4f402d" target="_blank" class="project-btn">View Full Project</a>
         </div>
-
+    </div>
 </section>
 
 <section id="labs">
     <h2>Lab Challenges</h2>
     <div class="grid">
-
         <div class="card">
             <h3>Netflix EDA (Python)</h3>
-            <p>Performed exploratory analysis to identify genre dominance, content growth trends, and production distribution.</p>
+            <p>Exploratory analysis to identify genre dominance, content growth trends, and production distribution.</p>
             <p><strong>Tools:</strong> Pandas, Matplotlib</p>
-            <a href="https://www.kaggle.com/code/marionsure/marion-sure-netflix-data-wrangling" target="_blank">
-                <button class="project-btn">View Full Project</button>
-            </a>
+            <a href="https://www.kaggle.com/code/marionsure/marion-sure-netflix-data-wrangling" target="_blank" class="project-btn">View Full Project</a>
         </div>
 
         <div class="card">
             <h3>Titanic Survival Model (Kaggle)</h3>
-            <p>Applied feature engineering and classification modeling to analyze survival predictors.</p>
+            <p>Applied feature engineering and classification modeling to analyze survival predictors and improve prediction accuracy.</p>
             <p><strong>Tools:</strong> Scikit-learn</p>
-            <a href="https://www.kaggle.com/code/marionsure/marion-sure-titanic-eda" target="_blank">
-                <button class="project-btn">View Full Project</button>
-            </a>
+            <a href="https://www.kaggle.com/code/marionsure/marion-sure-titanic-eda" target="_blank" class="project-btn">View Full Project</a>
         </div>
 
         <div class="card">
             <h3>HR Analytics Dashboard</h3>
-            <p>Developed interactive dashboard analyzing attrition rate, workforce distribution, and tenure trends.</p>
+            <p>Developed interactive dashboard analyzing attrition, workforce distribution, and tenure trends to support HR decision-making.</p>
             <p><strong>Tool:</strong> Tableau</p>
-            <a href="https://public.tableau.com/app/profile/marion.sure/viz/HRdashboard_17712709696740/HRSummary" target="_blank">
-                <button class="project-btn">View Full Project</button>
-            </a>
+            <a href="https://public.tableau.com/app/profile/marion.sure/viz/HRdashboard_17712709696740/HRSummary" target="_blank" class="project-btn">View Full Project</a>
         </div>
-
     </div>
 </section>
 
 <section id="contact">
     <h2>Contact</h2>
     <div class="card">
-        <p>Email: mnyaboe33@gmail.com</p>
+        <p>Email: <a href="mnyaboe33@gmail.com" style="color: var(--accent);">mnyaboe33@gmail.com</a></p>
         <p>Phone: +254 769 467 742</p>
         <div class="contact-links">
             <a href="https://www.linkedin.com/in/marion-sure/" target="_blank">LinkedIn</a>
